@@ -1,4 +1,4 @@
-class Guesser():
+class Guesser:
     def __init__(self, number, lives):
         self.number = number
         self.lives = lives
@@ -11,3 +11,5 @@ class Guesser():
         if self.number != n:
             self.lives -= 1
             return False
+guess_res = Guesser(5, 4)
+print(guess_res.guess(5))
